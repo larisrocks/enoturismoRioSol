@@ -1,0 +1,77 @@
+*, *:before, *:after {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	font-family: sans-serif;
+	font-size: 12px;
+	color: #fff;
+	background-image: url("../img/bg.jpg");
+}
+.page {
+	max-width: 100%;
+	padding: 15px;
+	background: #333;
+	margin: 0 auto;
+}
+.clearfix:after {
+	content: '.';
+	display: inline-block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+	line-height: 0;
+}
+.cols {
+	float: left;
+}
+.cols-12 {
+	width: 8.33%;
+}
+.cols-12-5x {
+	width: 41.65%;
+}
+.cols-6 {
+	width: 16.66%;
+}
+ 
+.cols-6-3x {
+	width: 50%;
+	height: 100%;
+	display: inline-block;
+	text-align: center;
+}
+.cols-6-5x {
+	width: 83.3%;
+}
+ 
+.cols-3 {
+	width: 33.33%;
+}
+.cols-3-2x {
+	width: 66.64%;
+}
+ 
+.content {
+	padding: 0;
+	margin: 1%;
+	padding: 20%;
+	color:#d9b160;
+	border:solid;
+	border-width: 1px;
+	border-color: #fff;
+}
+
+@media all and (min-width: 620px){
+	.cols-6-3x{
+		width: 33%;
+	}
+}
+
+img{
+	max-width: 100%;
+	min-width: 64px;
+}
